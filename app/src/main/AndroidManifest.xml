@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="33"
+        tools:ignore="GradleOverrides" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuanLyBanHangOnline"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.user.DetailProduct"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ShoppingCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.ProductListUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user.MenuUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.admin.CategoryActivity" />
+        <activity android:name=".activity.admin.ProductListActicity" />
+        <activity android:name=".activity.admin.ProductCreateActivity" />
+        <activity android:name=".activity.admin.ProductEditActivity" />
+        <activity android:name=".activity.admin.MenuActivity" />
+        <activity android:name=".activity.admin.BillStatisticActivity" />
+        <activity android:name=".activity.admin.CustomerListActivity" />
+        <activity android:name=".activity.login.LoginActivity" />
+        <activity android:name=".activity.login.RegisterActivity" />
+        <activity android:name=".activity.login.ForgotPasswordActivity" />
+        <activity android:name=".activity.login.VerifyActivity" />
+        <activity android:name=".activity.login.UpdatePasswordActivity" />
+        <activity android:name=".activity.admin.StatisticActivity" />
+        <activity android:name=".activity.user.BillStatisticUserActivity" />
+    </application>
+
+</manifest>
